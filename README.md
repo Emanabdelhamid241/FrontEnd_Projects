@@ -4,5 +4,3 @@
 
 
 
-###live for 2nd template 
-https://emanabdelhamid241.github.io/FrontEnd_Projects/ 
