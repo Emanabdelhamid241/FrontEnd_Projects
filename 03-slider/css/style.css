@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Tahoma,Arial, Helvetica, sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+    .slider_container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .slider_container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .slider_container {
+      width: 1170px;
+    }
+  }
+
+.slider_container{
+margin: 10px auto;
+width: 800px;
+height: 250px;
+position: relative;
+}
+.slider_container .number{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+    padding: 5px 10px;
+    z-index: 2;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.slider_container img{
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    height: 250px;
+    width: 800px;
+}
+.slider_container img.active{
+opacity: 1;
+}
+.slider_controls{
+margin: auto;
+width: 800px;
+}
+.slider_controls .prev,
+.slider_controls .next{
+    /*position: absolute;
+    */
+    width: 20%;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    user-select: none;
+    cursor: pointer;
+}
+.slider_controls .prev{
+    float: left;
+}
+.slider_controls .next{
+    float: right;
+}
+.slider_controls .prev.disabled,
+.slider_controls .next.disabled{
+    background-color: rgba(0, 153, 255, 0.555);
+    cursor: no-drop;
+}
+.slider_controls .indicators{
+    width: 60%;
+float: left;
+
+}
+.slider_controls .indicators ul{
+list-style: none;
+margin: 0;
+text-align: center;
+}
+.slider_controls .indicators ul li{
+    display: inline-block;
+      background-color: antiquewhite;
+      width: 25px;
+      margin:0 2px;
+      font-size: 25px;
+      line-height: 25px;
+      cursor: pointer;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+}
+.slider_controls .indicators ul li.active{
+    background-color: rgb(0, 153, 255);
+}
