@@ -9,25 +9,25 @@ body{
 /* Small */
 @media (min-width: 768px) {
     .container,.info {
-      width: 750px;
+      width: 500px;
     }
   }
   /* Medium */
   @media (min-width: 992px) {
     .container,.info {
-      width: 970px;
+      width: 600px;
     }
   }
   /* Large */
   @media (min-width: 1200px) {
     .container,.info {
-      width: 1170px;
+      width: 700px;
     }
   }
 
 .container ,.info{
 margin: 10px auto;
-width: 800px;
+/* width: 800px; */
 /* height: 250px; */
 position: relative;
 border-radius:4px ;
