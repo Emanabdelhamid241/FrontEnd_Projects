@@ -10,3 +10,6 @@
 
 ## live of [Fetch Repos App](https://fetch-repos-by-username-app.netlify.app/)
 
+## live of [Quiz App](https://quizappsimpleeman.netlify.app/)
+
+
